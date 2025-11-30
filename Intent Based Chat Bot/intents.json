@@ -1,0 +1,197 @@
+{
+  "intents": [
+
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "Namaste", "Hi bro", "Wassup", "Kya haal", "Good morning", "Good evening"],
+      "responses": ["Hello!", "Namaste! How can I help you today?", "Hi there!"]
+    },
+
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you", "Chal milte", "Good night", "Okay bye", "Talk later"],
+      "responses": ["Bye!", "Take care!", "See you soon!"]
+    },
+
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "Shukriya", "Thanks a lot", "Bohot dhanyavaad"],
+      "responses": ["You're welcome!", "Happy to help!", "Koi baat nahi!"]
+    },
+
+    {
+      "tag": "small_talk_how_are_you",
+      "patterns": ["How are you?", "Kaisa hai?", "How you doing?", "What's up", "Sup bro"],
+      "responses": ["I'm good! How are you?", "Perfect! You tell me."]
+    },
+
+    {
+      "tag": "small_talk_user_feelings",
+      "patterns": ["I'm sad", "Feeling low", "I'm stressed", "I'm happy", "Bored ho raha hoon"],
+      "responses": ["I’m here for you. Want to talk?", "I understand. Tell me more."]
+    },
+
+    {
+      "tag": "ask_name",
+      "patterns": ["What is your name?", "Tumhara naam?", "Who are you?", "Name please"],
+      "responses": ["I’m your AI assistant!", "You can call me your chatbot buddy!"]
+    },
+
+    {
+      "tag": "user_name",
+      "patterns": ["My name is Aditya", "I am Rohan", "Call me Neha", "This is Mehul"],
+      "responses": ["Nice to meet you!", "Glad to know you!"]
+    },
+
+    {
+      "tag": "indian_festival_wish",
+      "patterns": ["Happy Diwali", "Happy Holi", "Eid Mubarak", "Happy Ganesh Chaturthi", "Happy Dussehra", "Happy Rakhi"],
+      "responses": ["Wish you the same!", "Happy festival to you too!"]
+    },
+
+    {
+      "tag": "food_order",
+      "patterns": ["Order food", "I'm hungry", "Swiggy order", "Zomato order", "Kuch khane ko order karo"],
+      "responses": ["You can order food from Swiggy or Zomato!", "What would you like to eat today?"]
+    },
+
+    {
+      "tag": "train_status",
+      "patterns": ["Check train status", "IRCTC PNR status", "Train kab aayegi", "Train late hai kya"],
+      "responses": ["Please check IRCTC or NTES app for accurate train status."]
+    },
+
+    {
+      "tag": "cab_booking",
+      "patterns": ["Book a cab", "Ola book karo", "Uber chahiye", "Auto book karo"],
+      "responses": ["You can book Ola or Uber from their apps."]
+    },
+
+    {
+      "tag": "weather",
+      "patterns": ["Weather today?", "Barish hogi?", "Is it hot today?", "Delhi weather"],
+      "responses": ["Please check your local weather app for live updates."]
+    },
+
+    {
+      "tag": "recharge",
+      "patterns": ["Recharge my number", "Jio recharge", "Airtel pack", "Vodafone plan", "Data khatam ho gaya"],
+      "responses": ["You can recharge using Paytm, PhonePe, GPay, or operator apps."]
+    },
+
+    {
+      "tag": "upi_payment",
+      "patterns": ["Send money", "UPI kaise use karte", "GPay problem", "PhonePe not working", "Paytm se paisa kaise bheje"],
+      "responses": ["Open your UPI app → Enter number → Enter PIN → Done!"]
+    },
+
+    {
+      "tag": "aadhaar_help",
+      "patterns": ["Aadhaar update", "Aadhaar address change", "Aadhaar lost", "Aadhaar status"],
+      "responses": ["Visit UIDAI website or Aadhaar center for updates."]
+    },
+
+    {
+      "tag": "pan_help",
+      "patterns": ["Apply for PAN", "PAN status", "PAN card lost", "PAN update"],
+      "responses": ["You can apply or update PAN on the NSDL or UTI website."]
+    },
+
+    {
+      "tag": "bank_balance",
+      "patterns": ["Check bank balance", "Balance kaise check kare", "Account balance", "Bank details"],
+      "responses": ["You can check balance with missed call banking, ATM, or mobile app."]
+    },
+
+    {
+      "tag": "complaint",
+      "patterns": ["I want to complain", "Customer care", "Service is bad", "Not working", "This is wrong"],
+      "responses": ["I’m sorry for the inconvenience. What exactly is the issue?"]
+    },
+
+    {
+      "tag": "tracking_order",
+      "patterns": ["Track my Amazon order", "Flipkart delivery status", "Mera parcel kaha hai"],
+      "responses": ["Please use the tracking link provided in your order details."]
+    },
+
+    {
+      "tag": "school_exam",
+      "patterns": ["CBSE exam date", "Exam kab hai", "10th board", "UPSC preparation tips"],
+      "responses": ["Please check official website for authentic exam dates."]
+    },
+
+    {
+      "tag": "joke",
+      "patterns": ["Tell me a joke", "Hansi aayegi?", "Make me laugh"],
+      "responses": ["Why don’t skeletons fight? They don’t have the guts! 🤣"]
+    },
+
+    {
+      "tag": "motivation",
+      "patterns": ["Motivate me", "Give me inspiration", "Feeling low"],
+      "responses": ["You are strong. You are capable. You’ve got this! 💪"]
+    },
+
+    {
+      "tag": "movie_suggestion",
+      "patterns": ["Suggest a movie", "Hollywood movie", "Bollywood movie", "Kya dekhu"],
+      "responses": ["Try watching a popular movie like 3 Idiots, Jawan, or Interstellar!"]
+    },
+
+    {
+      "tag": "news",
+      "patterns": ["Latest news", "Kya chal raha hai", "Today news", "Breaking news"],
+      "responses": ["You can check news apps like Inshorts, TOI, or NDTV."]
+    },
+
+    {
+      "tag": "health_tips",
+      "patterns": ["Health tips", "Healthy kaise rahe", "Diet tips", "Exercise batao"],
+      "responses": ["Drink water, exercise daily, and eat balanced meals!"]
+    },
+
+    {
+      "tag": "covid",
+      "patterns": ["Covid cases", "Corona update", "Vaccination center"],
+      "responses": ["Please check Cowin or Aarogya Setu for accurate details."]
+    },
+
+    {
+      "tag": "relationship_advice",
+      "patterns": ["I had a breakup", "Relationship problem", "Love advice"],
+      "responses": ["I’m sorry you’re feeling this way. Want to talk about it?"]
+    },
+
+    {
+      "tag": "shopping_help",
+      "patterns": ["Help me buy something", "Which phone is best", "Laptop suggestion", "Budget phone"],
+      "responses": ["Sure! What's your budget? I can suggest options."]
+    },
+
+    {
+      "tag": "translation_hinglish",
+      "patterns": ["Translate this", "English mein bolo", "Hinglish to English"],
+      "responses": ["Sure! Tell me what you want translated."]
+    },
+
+    {
+      "tag": "travel_plans",
+      "patterns": ["Goa trip", "Places to visit", "Travel ideas", "Weekend plans"],
+      "responses": ["Here are some great options: Goa, Manali, Jaipur, Rishikesh."]
+    },
+
+    {
+      "tag": "work_help",
+      "patterns": ["I have workload", "Office problem", "Stressed with work"],
+      "responses": ["Take a short break, breathe, and restart. You can do it!"]
+    },
+
+    {
+      "tag": "college_admission",
+      "patterns": ["College admission", "Cutoff list", "College fees"],
+      "responses": ["Please check the official college website for accurate details."]
+    }
+
+  ]
+}
