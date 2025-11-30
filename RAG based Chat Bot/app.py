@@ -8,6 +8,7 @@ Original file is located at
 """
 
 !pip install faiss-cpu
+!pip install --upgrade sentence-transformers
 
 import pickle
 
@@ -143,11 +144,11 @@ def chat_fn(query, history):
     # Append to chat history
     history = history or []
     # append two tuples: the user message and the bot reply. Each tuple is (speaker, message).
-    history.append(("You", query))
-    history.append(("Bot", bot_reply))
+    history.append({"role": "user", "content": query})
+    history.append({"role": "assistant", "content": bot_reply})
     return history, history
 
-with gr.Blocks(title="RAG Chatbot (Conversation dataset)", css="footer {display:none}") as demo:
+with gr.Blocks(title="RAG Chatbot (Conversation dataset)") as demo:
   """
   Creates a Gradio Blocks layout with a page title and hides the footer.
   Everything inside this block becomes part of the UI.
