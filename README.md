@@ -13,7 +13,7 @@
 | Type                          | How it Works                                                                  | Good For                                | Bad For                                |
 | ----------------------------- | ----------------------------------------------------------------------------- | --------------------------------------- | -------------------------------------- |
 | **Intent Classification Bot** | Classifies user message into pre-defined *intents* → returns a fixed response | Simple chatbots, greetings, small tasks | Not good for large, dynamic FAQs       |
-| **RAG-Based Chatbot**         | Retrieves the most relevant FAQ answer using embeddings + vector search       | FAQ systems, knowledge-based bots       | Not good for small conversational bots |
+| **RAG-Based Chatbot**         | Retrieves the most relevant answer using embeddings + vector search       | FAQ systems, knowledge-based bots       | Not good for small conversational bots |
 
 ---
 
