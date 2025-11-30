@@ -1,10 +1,10 @@
 # Chat_Bot
 
-### **1. Intent Based Chatbot**
+### **1. Intent Based Chatbot** : [Link](https://huggingface.co/spaces/Aditya230302/Intent_Based_Chatbot)
 
 ### vs
 
-### **2. RAG-Based FAQ Chatbot**
+### **2. RAG-Based FAQ Chatbot** : [Link](https://huggingface.co/spaces/Aditya230302/RAG_Based_Chatbot) 
 
 ---
 
