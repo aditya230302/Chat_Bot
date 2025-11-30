@@ -138,14 +138,33 @@ def retrieve_answer(query, top_k=5):
 This function is called by Gradio whenever the user submits a message.
 history is the current chat conversation (list of pairs), passed back and forth so the chat UI can show context.
 """
+
+import gradio as gr
+
+# Detect if Chatbot expects new format
+GRADIO_NEW_CHATBOT = hasattr(gr.components.Chatbot, "_check_format") and "role" in gr.components.Chatbot._check_format.__code__.co_varnames
+
+def format_message(user_text, bot_text):
+    if GRADIO_NEW_CHATBOT:
+        # new v4+ format
+        return [
+            {"role": "user", "content": user_text},
+            {"role": "assistant", "content": bot_text}
+        ]
+    else:
+        # old v3 format
+        return [
+            (user_text, bot_text)
+        ]
+
 def chat_fn(query, history):
     res = retrieve_answer(query, top_k=3) # Calls retrieve_answer to find the best reply.
     bot_reply = res["answer"] # Extracts the string bot reply.
     # Append to chat history
     history = history or []
     # append two tuples: the user message and the bot reply. Each tuple is (speaker, message).
-    history.append({"role": "user", "content": query})
-    history.append({"role": "assistant", "content": bot_reply})
+    new_messages = format_message(query, bot_reply)
+    history.extend(new_messages)
     return history, history
 
 with gr.Blocks(title="RAG Chatbot (Conversation dataset)") as demo:
@@ -190,4 +209,3 @@ with gr.Blocks(title="RAG Chatbot (Conversation dataset)") as demo:
   # Shows a note reminding how to update the knowledge base.
 if __name__ == "__main__":
   demo.launch(server_name="0.0.0.0", server_port=7860)
-
