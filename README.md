@@ -1,6 +1,6 @@
 # Chat_Bot
 
-### **1. Your First Chatbot (Intent Classification Bot)**
+### **1. Intent Based Chatbot**
 
 ### vs
 
